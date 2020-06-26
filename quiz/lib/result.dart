@@ -6,7 +6,7 @@ class Result extends StatelessWidget {
 
   Result(this.total, this.restart);
 
-  String get frase {
+  String get sentense {
     if (total < 8) {
       return 'Congrats..!';
     } else if (total < 12) {
@@ -23,7 +23,7 @@ class Result extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Center(child: Text(frase, style: TextStyle(fontSize: 28))),
+        Center(child: Text(sentense, style: TextStyle(fontSize: 28))),
         FlatButton(
             textColor: Colors.blue,
             child: Text('Restart?', style: TextStyle(fontSize: 18)),
