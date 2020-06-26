@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import './result.dart';
 import './quiz.dart';
 
-void main() => runApp(PerguntaApp());
+void main() => runApp(QuizApp());
 final List<Map<String, Object>> _questions = [
   {
     'text': 'What is your favorite color?',
@@ -33,7 +33,7 @@ final List<Map<String, Object>> _questions = [
   }
 ];
 
-class QuizAppState extends State<PerguntaApp> {
+class QuizAppState extends State<QuizApp> {
   var _selectedAnswer = 0;
   var _total = 0;
   void _answer(int score) {
@@ -74,9 +74,9 @@ class QuizAppState extends State<PerguntaApp> {
   }
 }
 
-class PerguntaApp extends StatefulWidget {
+class QuizApp extends StatefulWidget {
   @override
-  State<PerguntaApp> createState() {
+  State<QuizApp> createState() {
     return QuizAppState();
   }
 }

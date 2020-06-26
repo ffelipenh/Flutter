@@ -24,7 +24,7 @@ class Quiz extends StatelessWidget {
 
     return Column(children: <Widget>[
       Question(questions[selected]['text']),
-      ...answers.map((p) => Resposta(p['text'], () => answer(p['score'])))
+      ...answers.map((p) => Answer(p['text'], () => answer(p['score'])))
     ]);
   }
 }
