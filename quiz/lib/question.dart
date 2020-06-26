@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class Question extends StatelessWidget {
-  
   final String text;
   Question(this.text);
 
@@ -12,9 +11,9 @@ class Question extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: Text(
         text,
-        style: TextStyle(fontSize: 28 ),
+        style: TextStyle(fontSize: 28),
         textAlign: TextAlign.center,
-        ),
+      ),
     );
   }
 }
