@@ -16,19 +16,19 @@ final List<Map<String, Object>> _questions = [
   {
     'text': 'What is your favorite animal?',
     'answers': [
-      {'text':'Cat', 'score': 8},
-      {'text':'Dog', 'score': 1},
-      {'text':'Cow', 'score': 7},
-      {'text':'Lion', 'score': 6},
+      {'text': 'Cat', 'score': 8},
+      {'text': 'Dog', 'score': 1},
+      {'text': 'Cow', 'score': 7},
+      {'text': 'Lion', 'score': 6},
     ]
   },
   {
     'text': 'What is your favorite teacher?',
     'answers': [
-       {'text':'Maria', 'score': 2},
-       {'text':'Leonard', 'score': 4},
-       {'text':'Peter', 'score': 1},
-       {'text':'Philip', 'score': 9}
+      {'text': 'Maria', 'score': 2},
+      {'text': 'Leonard', 'score': 4},
+      {'text': 'Peter', 'score': 1},
+      {'text': 'Philip', 'score': 9}
     ]
   }
 ];
@@ -45,7 +45,7 @@ class QuizAppState extends State<PerguntaApp> {
     }
   }
 
-  void _restart(){
+  void _restart() {
     setState(() {
       _selectedAnswer = 0;
       _total = 0;
